@@ -1,0 +1,25 @@
+[package]
+name = "canto-lock"
+version = "0.1.0"
+edition = "2021"
+description = "Canto folder locking: encrypts a folder's contents, names and structure behind a password"
+
+[lib]
+name = "canto_lock"
+path = "src/lib.rs"
+
+[[bin]]
+name = "canto-lock"
+path = "src/main.rs"
+
+[dependencies]
+canto-crypto = { path = "../crypto" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+walkdir = "2"
+rand = "0.8"
+rpassword = "7"
+zeroize = "1"
+
+[dev-dependencies]
+tempfile = "3"

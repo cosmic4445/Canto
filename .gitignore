@@ -1,0 +1,7 @@
+target/
+bin/
+obj/
+node_modules/
+dist/
+*.cnto
+.canto-lock

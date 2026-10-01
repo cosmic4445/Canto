@@ -1,0 +1,17 @@
+[package]
+name = "canto-app"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "canto"
+path = "src/main.rs"
+
+[dependencies]
+canto-crypto = { path = "../../../core/crypto" }
+canto-lock = { path = "../../../core/lock" }
+tiny_http = "0.12"
+include_dir = "0.7"
+serde_json = "1"
+sha2 = "0.10"
+ureq = { version = "2", features = ["json"] }
